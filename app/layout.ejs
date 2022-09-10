@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="">
+  <div class="flex w-full">
+    <header class="bg-primary w-[296px]  h-screen flex flex-col justify-between">
+      <div class="">
+        <a href="#"><img
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg" alt="logo"
+          class="mb-8 px-8 pt-8"></a>
+      <!-- 列表區塊 -->
+      <ul>
+        <!-- 01 assessment -->
+        <li class="mb-6">
+          <a href="#" class="flex items-center relative h-8 group w-full pl-8 hover:text-secondary">
+            <span class="hidden absolute before:content-[''] bg-secondary w-1 h-8 top-0 left-0 group-hover:block"></span>
+            <span class="material-icons mr-4">
+              assessment
+            </span>
+            <p class="font-bold">Dashboard</p>
+          </a>
+        </li>
+        <!-- 02 Question -->
+        <li class="mb-6">
+          <a href="#" class="flex items-center relative h-8 group w-full pl-8 hover:text-secondary">
+            <span class="hidden absolute before:content-[''] bg-secondary w-1 h-8 top-0 left-0 group-hover:block"></span>
+            <span class="material-icons mr-4">
+              question_answer
+            </span>
+            <p class="font-bold">Question</p>
+          </a>
+        </li>
+        <!-- 03 Assignment -->
+        <li class="mb-6">
+          <a href="#" class="flex items-center relative h-8 group w-full pl-8 hover:text-secondary">
+            <span class="hidden absolute before:content-[''] bg-secondary w-1 h-8 top-0 left-0 group-hover:block"></span>
+            <span class="material-icons mr-4">
+              assignment
+            </span>
+            <p class="font-bold">Assignment</p>
+          </a>
+        </li>
+        <!-- 04 Course -->
+        <li class="mb-6">
+          <a href="#" class="flex items-center relative h-8 group w-full pl-8 hover:text-secondary">
+            <span class="hidden absolute before:content-[''] bg-secondary w-1 h-8 top-0 left-0 group-hover:block"></span>
+            <span class="material-icons mr-4">
+              video_library
+            </span>
+            <p class="font-bold">Course</p>
+          </a>
+        </li>
+        <!-- 05 Admin -->
+        <li class="mb-6">
+          <a href="#" class="flex items-center relative h-8 group w-full pl-8 text-secondary ">
+            <span class="absolute before:content-[''] bg-secondary w-1 h-8 top-0 left-0 group-hover:block "></span>
+            <span class="material-icons mr-4">
+              people
+            </span>
+            <p class="font-bold">Admin</p>
+          </a>
+        </li>
+        <!-- 06 Settings -->
+        <li class="mb-6">
+          <a href="#" class="flex items-center relative h-8 group w-full pl-8 hover:text-secondary">
+            <span class="hidden absolute before:content-[''] bg-secondary w-1 h-8 top-0 left-0 group-hover:block"></span>
+            <span class="material-icons mr-4">
+              settings
+            </span>
+            <p class="font-bold">Settings</p>
+          </a>
+        </li>
+      </ul>
+      <!-- 列表區塊 -->
+      </div>
+  
+      <!-- 使用者區塊 -->
+      <div class="px-8 pb-8 flex items-center">
+        <!-- 使用者圖片 -->
+        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg" alt="Andy Chen" class="w-10 h-10 rounded-full mr-4 shrink-0">
+        <!-- 使用者圖片 -->
+        <!-- 使用者文字區塊 -->
+        <div class="">
+          <h3 class="font-bold">Andy Chen</h3>
+          <p class="text-gray text-sm leading-[1.7142]">andy0401@mail.com</p>
+        </div>
+        <!-- 使用者文字區塊 -->
+      </div>
+      <!-- 使用者區塊 -->
+  
+    </header>
+  
+    <%- contents %>
+  </div>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
